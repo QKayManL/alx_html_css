@@ -350,3 +350,40 @@ body {
     font-size: 15px;
     line-height: 1.6;
 }
+/* ============================
+            FOOTER
+============================ */
+
+.footer {
+    background: #071122;
+    padding: 80px 100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_left {
+    text-align: left;
+}
+
+.footer_logo {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.footer_copy {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.footer_socials img {
+    width: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.footer_socials img:hover {
+    opacity: 0.7;
+}
