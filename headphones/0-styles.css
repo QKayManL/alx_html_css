@@ -1,0 +1,83 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --pink: #FF6565;
+    --max-width: 1000px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url("assets/headphones_hero_1.jpg") no-repeat center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo {
+    width: 140px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--pink);
+}
+
+/* HERO CONTENT */
+.hero-content {
+    text-align: center;
+    max-width: var(--max-width);
+    margin: 0 auto 80px;
+}
+
+.cta {
+    background: var(--pink);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.cta:hover {
+    opacity: 0.9;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .nav-links {
+        display: none; /* Hidden on mobile */
+    }
+
+    .hero {
+        background: url("assets/headphones_hero_2.jpg") no-repeat center/cover;
+        height: 100vh;
+    }
+}
