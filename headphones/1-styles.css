@@ -1,0 +1,28 @@
+/* ========== RESET ========== */
+/* same reset rules */
+
+/* ========== VARIABLES ========== */
+/* same variables from task 1 */
+
+/* ========== HERO SECTION (copied from 0-styles.css) ========== */
+/* hero styling here */
+
+/* ========== WHAT WE DO SECTION (Task 2 starts here) ========== */
+
+.what-we-do {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.what-we-do .icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
