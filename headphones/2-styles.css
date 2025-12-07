@@ -1,0 +1,56 @@
+/* ========== RESET ========== */
+/* same reset rules */
+
+/* ========== VARIABLES ========== */
+/* same variables from task 1 */
+
+/* ========== HERO SECTION (copied from 0-styles.css) ========== */
+/* hero styling here */
+
+/* ========== WHAT WE DO SECTION (Task 2 starts here) ========== */
+
+.what-we-do {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.what-we-do .icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+/* OUR RESULTS SECTION */
+
+.our-results {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.our-results h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.our-results .icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.our-results .icon h3 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.our-results .icon p {
+  opacity: .8;
+}
