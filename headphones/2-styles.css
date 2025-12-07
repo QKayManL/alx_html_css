@@ -91,3 +91,16 @@
     margin-top: 10px;
     font-size: 1.2rem;
 }
+.our-results .item {
+    animation: fadeIn 1.5s ease-in forwards;
+}
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

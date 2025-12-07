@@ -1,0 +1,113 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --pink: #ff6565;
+  --max-width: 1000px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: url("assets/headphones_hero_1.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--max-width);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 140px;
+}
+
+/* DESKTOP NAV */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== HAMBURGER BUTTON ===== */
+.hamburger {
+  width: 30px;
+  height: 22px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+/* ===== MOBILE STYLES (<480px) ===== */
+@media (max-width: 480px) {
+
+  /* Hide desktop nav */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(0,0,0,0.8);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hamburger → X animation */
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+/* Nice fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

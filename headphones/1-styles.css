@@ -26,3 +26,16 @@
   justify-content: space-between;
   gap: 30px;
 }
+.what-we-do .icon {
+    animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
