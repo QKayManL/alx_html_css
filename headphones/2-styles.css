@@ -54,3 +54,40 @@
 .our-results .icon p {
   opacity: .8;
 }
+/* ========== RESULTS SECTION ========== */
+
+.results {
+    max-width: var(--max-width);
+    margin: 60px auto;
+    text-align: center;
+}
+
+.results h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.results-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.results .box {
+    background: white;
+    color: black;
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.results .box h3 {
+    font-size: 2.5rem;
+    color: var(--pink);
+}
+
+.results .box p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
